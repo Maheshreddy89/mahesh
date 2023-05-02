@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+
+   <style>
+    *{
+    margin: 0PX;
+    padding: 0PX;
+    box-sizing: border-box;
+}
+
+
+.mar11{
+    background-color:   #FF3360 ;
+    color: white;
+    font-family:roboto;
+    font-size: 25px;
+    padding: 10px;
+}
+.nav-link .active{
+    background-color: transparent;
+    border: 20px silid red;
+    border-radius: 20px;
+    margin: 15px;
+    color: white;
+}
+
+.nav-link:hover{
+    background-color: red;
+    color:yellow;
+    border: 2px solid gray;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+.mar2{
+    background-color: black;
+    color: red;
+    font-family: 'Vina Sans', cursive;
+    transition:height 2sec;
+}
+.mar2:hover{
+    background-color: white;
+    font-size: 35px;
+    height: 100px;
+} 
+
+.ml-5,.ml-3{
+    margin-top: 10px;
+}
+
+   </style>
+
+</head>
+<body>
+    <marquee class="mar11" behavior="" direction="">  <img src="./logs.jpg" alt="" style="width: 60px; height: 30px;"> WELCOME TO MAHESH REDDY TECH TELUGU</marquee>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary sticky-top">
+        <a class="navbar-brand image-fluid" href="#"><img src="./mobile.jpg" style="width: 45px; height: 55px;" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active mr-auto">
+              <a class="nav-link mr-auto text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="aboutus.html" target="_blank">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+              
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="loginss.html">LOG IN</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="videos.html" target="_blank">VIDEOS</a>
+              </li>
+          </ul>
+          
+          <form class="form-inline my-2 my-sm-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+   
+      <div class="bacck">
+      <marquee class="mar2"> KNOWLWDGE GIVES MORE STRENGTH & CONFIDENCE THAN MONEY </marquee></div>
+      <section class="continer my-2 bg-dark w-50 text-light p-2 text-center d-flex justify-content-center">
+        <div class="form-row">
+      <form class="form-group "action="maill.php" method="post">
+        <label for="" class=" bg-primary"> Name</label>
+        <input class="form-control" type="text" name="Name" width ="80px" required placeholder="ENTER YOUR NAME">
+        <label class="ml-5 bg-primary">Mobile Number</label>
+        <input class="form-control" type="number" name="Mobile Number" width ="80px" required placeholder="ENTER 10 DIGIT MOBILE NUMBER">
+        <label class="ml-3 bg-primary" for="">Email</label>
+        <input class="form-control" type="email" name="Email"  width ="511px"  required placeholder="ENTER @ YOUR EMAIL."> 
+        <label class="ml-5 bg-primary" for="">Please Post your opinion</label>
+        <input class="form-control" type="text" name="Message" width ="80px" required placeholder="ENTER Message"><br>
+
+        <button class="btn-btn-primary"><input type="submit" class="bg-success text-light"></button>
+      
+      </form></section></div>
+     
+     
+       
+    
+</body>
+</html>
